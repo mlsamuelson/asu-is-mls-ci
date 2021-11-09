@@ -3007,6 +3007,9 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "#3085001: Config blacklist to only block some configuration while in read only mode": "https://www.drupal.org/files/issues/2019-10-31/config_readonly-3085001-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3297,6 +3300,13 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
+                },
+                "patches_applied": {
+                    "#2951547: Fix issue with layout overflow": "https://www.drupal.org/files/issues/2020-01-08/layout-builder-tray-size-2951547-42.patch",
+                    "3102249: Changing an existing embedded media's attributes does not get saved with CKEditor": "https://www.drupal.org/files/issues/2020-06-01/3102249-21.patch",
+                    "2957953: Editing menus redirect to right parent": "https://www.drupal.org/files/issues/2021-09-02/2957953-134-9-2-x.patch",
+                    "3109650: Refactor Xss::attributes() to allow filtering of style attribute values": "https://www.drupal.org/files/issues/2021-09-22/core-9.2-xss-refactor_filter_attributes-3109650-43.patch",
+                    "3072231: Custom blocks break layout builder module - Quick Edit could not associate the rendered entity field markup": "https://www.drupal.org/files/issues/2020-10-19/3072231-39-core-9-2-x.patch"
                 }
             },
             "autoload": {
@@ -4041,6 +4051,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "3002953: Fix js plugin seems to be missing": "https://www.drupal.org/files/issues/2020-06-22/fakeobjects-missing_plugin-3002953-5.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4785,6 +4798,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "2901390: fixing issue langcode cannot be null": "https://www.drupal.org/files/issues/2021-05-03/paragraphs-2901390-82-withtests.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4923,6 +4939,9 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
+                },
+                "patches_applied": {
+                    "3053579: Integrate with OffCanvas (Layout Builder)": "https://www.drupal.org/files/issues/2020-10-20/3053579-25_0.patch"
                 }
             },
             "autoload": {
@@ -5442,6 +5461,9 @@
                     "services": {
                         "drush.services.yml": "^9 || ^10"
                     }
+                },
+                "patches_applied": {
+                    "3243431: Status report when plugin path exists": "https://www.drupal.org/files/issues/2021-10-20/3243431-7.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6802,16 +6824,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.13.0",
+            "version": "v4.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "50953a2691a922aa1769461637869a0a2faa3f53"
+                "reference": "63a79e8daa781cac14e5195e63ed8ae231dd10fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/50953a2691a922aa1769461637869a0a2faa3f53",
-                "reference": "50953a2691a922aa1769461637869a0a2faa3f53",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/63a79e8daa781cac14e5195e63ed8ae231dd10fd",
+                "reference": "63a79e8daa781cac14e5195e63ed8ae231dd10fd",
                 "shasum": ""
             },
             "require": {
@@ -6850,11 +6872,7 @@
                 "parser",
                 "php"
             ],
-            "support": {
-                "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.13.0"
-            },
-            "time": "2021-09-20T12:20:58+00:00"
+            "time": "2021-11-03T20:52:16+00:00"
         },
         {
             "name": "npm-asset/fonticonpicker--fonticonpicker",
@@ -10623,6 +10641,7 @@
                 "issues": "https://github.com/webmozart/path-util/issues",
                 "source": "https://github.com/webmozart/path-util/tree/2.3.0"
             },
+            "abandoned": "symfony/filesystem",
             "time": "2015-12-17T08:42:14+00:00"
         },
         {
@@ -10737,5 +10756,5 @@
     "platform-overrides": {
         "php": "7.4"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "1.1.0"
 }
